@@ -1,0 +1,16 @@
+<?php
+$host = "localhost";  // Your database host (localhost for XAMPP)
+$user = "root";       // Default username for XAMPP
+$password = "";       // Default password for XAMPP (leave empty)
+$database = "my_project_db"; // Replace with your actual database name
+
+// Create a connection to MySQL database
+$conn = mysqli_connect($host, $user, $password, $database);
+
+// Check the connection and display errors if any
+if (!$conn) {
+    die("❌ Database connection failed: " . mysqli_connect_error());
+} else {
+    echo "✅ Database connected successfully!";
+}
+?>
